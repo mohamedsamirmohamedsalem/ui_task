@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/CourseDesign/model/view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CourseDesign/presenter/presenter.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/resources/constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/debug_android_application.stamp" afterDir="false" />
@@ -13,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/07a2b100671342a27c761be89a74a602/kernel_snapshot.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
@@ -23,9 +19,7 @@
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CourseCardDetails.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,26 +79,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603893100591">
+    <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603894337055">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.988@0.23.1920.988" timestamp="1603893100591" />
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom" timestamp="1603893215451">
+    <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.988@0.23.1920.988" timestamp="1603894337055" />
+    <state width="1878" height="409" key="GridCell.Tab.0.bottom" timestamp="1603894867433">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.bottom/0.23.1920.988@0.23.1920.988" timestamp="1603893215451" />
-    <state width="1878" height="387" key="GridCell.Tab.0.center" timestamp="1603893215450">
+    <state width="1878" height="409" key="GridCell.Tab.0.bottom/0.23.1920.988@0.23.1920.988" timestamp="1603894867433" />
+    <state width="1878" height="409" key="GridCell.Tab.0.center" timestamp="1603894867421">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.center/0.23.1920.988@0.23.1920.988" timestamp="1603893215450" />
-    <state width="1878" height="387" key="GridCell.Tab.0.left" timestamp="1603893215450">
+    <state width="1878" height="409" key="GridCell.Tab.0.center/0.23.1920.988@0.23.1920.988" timestamp="1603894867421" />
+    <state width="1878" height="409" key="GridCell.Tab.0.left" timestamp="1603894867420">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.left/0.23.1920.988@0.23.1920.988" timestamp="1603893215450" />
-    <state width="1878" height="387" key="GridCell.Tab.0.right" timestamp="1603893215450">
+    <state width="1878" height="409" key="GridCell.Tab.0.left/0.23.1920.988@0.23.1920.988" timestamp="1603894867420" />
+    <state width="1878" height="409" key="GridCell.Tab.0.right" timestamp="1603894867423">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state width="1878" height="387" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1603893215450" />
+    <state width="1878" height="409" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1603894867423" />
     <state x="100" y="123" width="1720" height="788" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1603890873786">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
