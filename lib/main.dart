@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'CourseCardDetails.dart';
+import 'CourseDesignDetails/view/CourseCardDetails.dart';
 
 void main() {
   runApp(MyApp());
