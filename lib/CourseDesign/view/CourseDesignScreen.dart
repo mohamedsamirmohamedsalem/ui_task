@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 
-class CourseDesignScreen extends StatefulWidget {
-  @override
-  _CourseDesignScreenState createState() => _CourseDesignScreenState();
-}
-
-class _CourseDesignScreenState extends State<CourseDesignScreen> {
+class CourseDesignScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    // TODO: implement build
+    return Container(
+      child: Center(
+        child: Text("Test"),
+      ),
+    );
   }
 }

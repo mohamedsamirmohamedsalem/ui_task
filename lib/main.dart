@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'CourseDesignDetails/view/CourseCardDetails.dart';
+import 'package:ui_task/CourseDesign/view/CourseDesignScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         //visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CourseCardDetails(),
+      home: CourseDesignScreen(),
     );
   }
 }
