@@ -3,9 +3,18 @@ import 'package:flutter/material.dart';
 
 import 'Dimens.dart';
 
-BorderRadius borderRadius20 = BorderRadius.only(
-    topRight: Radius.circular(DIMEN_20), topLeft: Radius.circular(DIMEN_20));
+BoxDecoration kBoxDecorationSide20 = BoxDecoration(
+  color: Colors.white60,
+  borderRadius: BorderRadius.only(
+      topRight: Radius.circular(DIMEN_30), topLeft: Radius.circular(DIMEN_30)),
+);
 
-BoxDecoration boxDecorationSide20 = BoxDecoration(
-  borderRadius: borderRadius20,
+BoxDecoration kBoxDecorationAllSide8 = BoxDecoration(
+  color: Colors.lightBlue,
+  borderRadius: BorderRadius.all(Radius.circular(DIMEN_8)),
+);
+
+BoxDecoration kBoxDecorationGreyBorder = BoxDecoration(
+  border: Border.all(color: Colors.grey),
+  borderRadius: BorderRadius.all(Radius.circular(DIMEN_7)),
 );
