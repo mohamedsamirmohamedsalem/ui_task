@@ -18,9 +18,15 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
   final String cost = "\$25.99";
   final String rating = "4.9";
   final String joinCourseText = "Join Course";
+  final String classe = "Classe";
+  final String seat = "Seat";
+  final String time = "Time";
+
+  // MARK:- UI Layer
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height,
       color: Colors.grey[100],
       child: Stack(
         alignment: Alignment.topLeft,
@@ -32,57 +38,61 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
     );
   }
 
-  // MARK:- UI Layer
-
-  Image buildTopImage() {
-    return Image(
-      height: MediaQuery.of(context).size.height / DIMEN_3 + DIMEN_45,
-      fit: BoxFit.cover,
-      image: AssetImage(INTERFACE4),
-      width: MediaQuery.of(context).size.width,
-    );
-  }
-
-  Positioned buildBottomSection() {
-    return Positioned.fill(
-      top: MediaQuery.of(context).size.height / 2.8,
-      child: Stack(
-        alignment: Alignment.topLeft,
-        children: <Widget>[
-          Container(
-            margin: EdgeInsets.only(top: DIMEN_26),
-            padding:
-                EdgeInsets.symmetric(horizontal: DIMEN_20, vertical: DIMEN_20),
-            decoration: kBoxDecorationSide20,
-            child: buildListOfTitles(),
-          ),
-          buildFavoriteCircleAvatar(),
-        ],
+  Container buildTopImage() {
+    return Container(
+      color: Colors.white,
+      child: Image(
+        height: 250,
+        fit: BoxFit.cover,
+        image: AssetImage(INTERFACE4),
+        width: MediaQuery.of(context).size.width,
       ),
     );
   }
 
-  Widget buildListOfTitles() {
+  Widget buildBottomSection() {
+    return SingleChildScrollView(
+      child: Container(
+        color: Colors.transparent,
+        padding: EdgeInsets.only(top: 250),
+        child: Stack(
+          alignment: Alignment.topLeft,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.only(top: DIMEN_26),
+              padding:
+                  EdgeInsets.fromLTRB(DIMEN_20, DIMEN_20, DIMEN_20, DIMEN_0),
+              decoration: kBoxDecorationSide20,
+              child: buildListOfDetails(),
+            ),
+            buildFavoriteCircleAvatar(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget buildListOfDetails() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.max,
       children: <Widget>[
-        Text(
-          webDesign,
-          style: kMainHeaderBlackTextStyle,
-        ),
-        Text(
-          course,
-          style: kMainHeaderBlackTextStyle,
-        ),
+        buildSingleText(text: webDesign, style: kMainHeaderBlackTextStyle),
+        buildSingleText(text: course, style: kMainHeaderBlackTextStyle),
         moneyAndRatingRow(),
-        Text(
-          courseDetailsText,
-          style: ksubHeaderBlackTextStyle,
-        ),
+        buildCourseDetailsCard(),
+        buildSingleText(
+            text: courseDetailsText, style: ksubHeaderBlackTextStyle),
         buildBottomButtons(),
       ],
+    );
+  }
+
+  Text buildSingleText({String text, TextStyle style}) {
+    return Text(
+      text,
+      style: style,
     );
   }
 
@@ -136,9 +146,52 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
     );
   }
 
+  Widget buildSingleCard({String upText, String downText}) {
+    return Card(
+      color: Colors.white,
+      margin: EdgeInsets.fromLTRB(DIMEN_20, DIMEN_0, DIMEN_20, DIMEN_40),
+      elevation: DIMEN_2,
+      child: Container(
+        width: DIMEN_60,
+        height: DIMEN_60,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Text(
+              upText,
+              style: ksubHeaderBlueTextStyle,
+            ),
+            SizedBox(
+              height: DIMEN_5,
+            ),
+            Text(
+              downText,
+              style: ksubHeaderBlackTextStyle,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget buildCourseDetailsCard() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      children: <Widget>[
+        buildSingleCard(upText: "24", downText: classe),
+        buildSingleCard(upText: "2Hours", downText: time),
+        buildSingleCard(upText: "19", downText: seat),
+      ],
+    );
+  }
+
   Widget buildBottomButtons() {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: DIMEN_40),
+      padding: EdgeInsets.only(top: DIMEN_40, bottom: DIMEN_20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
