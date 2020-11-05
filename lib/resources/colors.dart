@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 const Color DARK_BLACK = Color(0xFF1d1d26);
 const Color BLUE = Color(0xFF207fc9);
+const Color LIGHT_BLUE = Color(0xFF00AEEA);
 const Color HINT = Color(0xFF991d1d26);
 const Color WHITE = Color(0xFFffffff);
 const Color BLUE_FILL = Color(0xFFeaf6ff);
 const Color GRAY_FILL = Color(0xFFf3f3f3);
-const Color GRAY_DIVIDER = Color(0xFFc3c3c3);
+const Color GRAY_DIVIDER = Color(0xFFf7f9fa);
 const Color FADED_GRAY_DIVIDER = Color(0xFFe1e1e1);
 const Color GRAY_TEXT = Color(0xFF6c6969);
 const Color GRAY_ITEM_TEXT = Color(0xFF717171);
