@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="" />
-=======
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/lib/resources/styles.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" afterDir="false" />
     </list>
->>>>>>> 005a481b8bc0ef7c51b02a6446e3f4db77292d5c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,11 +45,8 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/CourseDesign/model" />
-<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
-=======
     <property name="settings.editor.selected.configurable" value="dart.settings" />
->>>>>>> 005a481b8bc0ef7c51b02a6446e3f4db77292d5c
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -125,13 +119,11 @@
     <state width="1878" height="482" key="GridCell.Tab.0.right/0.23.1920.980@0.23.1920.980" timestamp="1604495034206" />
     <state width="1242" height="341" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1604392773899" />
     <state width="1878" height="15" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1604240220513" />
-<<<<<<< HEAD
     <state width="1878" height="409" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1603894867423" />
     <state x="461" y="152" key="SettingsEditor" timestamp="1604236848887">
       <screen x="0" y="23" width="1920" height="984" />
     </state>
     <state x="461" y="152" key="SettingsEditor/0.23.1920.984@0.23.1920.984" timestamp="1604236848887" />
-=======
     <state width="1868" height="365" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1604562591726" />
     <state x="461" y="114" key="SettingsEditor" timestamp="1604559266641">
       <screen x="0" y="23" width="1920" height="988" />
@@ -142,7 +134,6 @@
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state x="794" y="198" key="VcsDiffUtil.ChangesDialog/0.23.1920.988@0.23.1920.988" timestamp="1604562711404" />
->>>>>>> 005a481b8bc0ef7c51b02a6446e3f4db77292d5c
     <state x="100" y="123" width="1720" height="788" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1603890873786">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
