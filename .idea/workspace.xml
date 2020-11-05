@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Runner.build/Release-iphoneos/Runner.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Runner.build/Release-iphoneos/Runner.build/dgph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-    </list>
+    <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,30 +69,34 @@
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.988@0.23.1920.988" timestamp="1603894337055" />
-    <state width="1878" height="498" key="GridCell.Tab.0.bottom" timestamp="1604238489002">
-      <screen x="0" y="23" width="1920" height="980" />
+    <state width="1878" height="482" key="GridCell.Tab.0.bottom" timestamp="1604572039806">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1878" height="482" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
     <state width="1878" height="409" key="GridCell.Tab.0.bottom/0.23.1920.988@0.23.1920.988" timestamp="1603894867433" />
-    <state width="1878" height="498" key="GridCell.Tab.0.center" timestamp="1604238489002">
-      <screen x="0" y="23" width="1920" height="980" />
+    <state width="1878" height="482" key="GridCell.Tab.0.center" timestamp="1604572039806">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1878" height="482" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
     <state width="1878" height="409" key="GridCell.Tab.0.center/0.23.1920.988@0.23.1920.988" timestamp="1603894867421" />
-    <state width="1878" height="498" key="GridCell.Tab.0.left" timestamp="1604238489001">
-      <screen x="0" y="23" width="1920" height="980" />
+    <state width="1878" height="482" key="GridCell.Tab.0.left" timestamp="1604572039806">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1878" height="482" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.980@0.23.1920.980" timestamp="1604238489001" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.984@0.23.1920.984" timestamp="1604237150574" />
     <state width="1878" height="409" key="GridCell.Tab.0.left/0.23.1920.988@0.23.1920.988" timestamp="1603894867420" />
-    <state width="1878" height="498" key="GridCell.Tab.0.right" timestamp="1604238489002">
-      <screen x="0" y="23" width="1920" height="980" />
+    <state width="1878" height="482" key="GridCell.Tab.0.right" timestamp="1604572039806">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1878" height="482" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
