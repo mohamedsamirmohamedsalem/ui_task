@@ -1,8 +1,12 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/view/CourseDesignScreen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(DevicePreview(
+    areSettingsEnabled: false,
+    builder: (context) => MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

@@ -28,3 +28,5 @@ const Color PROFILE_VALUE = Color(0xFF5a5a5a);
 const Color SWITCH_TRACK = Color(0xFFa6a6a6);
 const Color RED = Color(0xFFff0000);
 const Color SUPPLIER_BORDER = Color(0xFFcbcbcb);
+const Color TRANSPARENT = Colors.transparent;
+const Color GREY = Colors.grey;

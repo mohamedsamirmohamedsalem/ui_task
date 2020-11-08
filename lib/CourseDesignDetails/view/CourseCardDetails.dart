@@ -1,46 +1,47 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/resources/Dimens.dart';
+import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
 import 'package:ui_task/resources/images.dart';
+import 'package:ui_task/resources/strings.dart';
 import 'package:ui_task/resources/styles.dart';
 
-class CourseCardDetails extends StatefulWidget {
-  @override
-  _CourseCardDetailsState createState() => _CourseCardDetailsState();
-}
-
-class _CourseCardDetailsState extends State<CourseCardDetails> {
-  final String courseDetailsText =
-      "Lorem ipsum dolor sit amet, sea eius luptatum principes ei, sea quidam dissentias vituperatoribus an. Vis dicam ceteros eu. Ex omnes graecis similique cum. Choro equidem ea has.";
-  final String webDesign = "Web Design";
-  final String course = "Course";
-  final String cost = "\$25.99";
-  final String rating = "4.9";
-  final String joinCourseText = "Join Course";
-  final String classe = "Classe";
-  final String seat = "Seat";
-  final String time = "Time";
-
-  // MARK:- UI Layer
+class CourseCardDetails extends StatelessWidget {
+// MARK:- UI Layer
   @override
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.of(context).size.height,
-      color: Colors.grey[100],
+      color: WHITE,
       child: Stack(
         alignment: Alignment.topLeft,
         children: [
-          buildTopImage(),
+          buildTopImage(context: context),
           buildBottomSection(),
+          buildBackButton(context: context),
         ],
       ),
     );
   }
 
-  Container buildTopImage() {
+  Widget buildBackButton({BuildContext context}) {
+    return GestureDetector(
+      onTap: () => back(context: context),
+      child: Container(
+          padding:
+              EdgeInsets.symmetric(horizontal: DIMEN_20, vertical: DIMEN_30),
+          child: Icon(Icons.arrow_back)),
+    );
+  }
+
+  void back({BuildContext context}) {
+    Navigator.pop(context);
+  }
+
+  Container buildTopImage({BuildContext context}) {
     return Container(
-      color: Colors.white,
+      color: WHITE,
       child: Image(
         height: 250,
         fit: BoxFit.cover,
@@ -53,8 +54,8 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
   Widget buildBottomSection() {
     return SingleChildScrollView(
       child: Container(
-        color: Colors.transparent,
-        padding: EdgeInsets.only(top: 250),
+        color: TRANSPARENT,
+        padding: EdgeInsets.only(top: 220),
         child: Stack(
           alignment: Alignment.topLeft,
           children: <Widget>[
@@ -102,11 +103,11 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
       child: Padding(
           padding: EdgeInsets.only(right: DIMEN_25, top: DIMEN_1),
           child: CircleAvatar(
-            backgroundColor: Colors.lightBlue,
+            backgroundColor: LIGHT_BLUE,
             radius: DIMEN_26,
             child: Icon(
               Icons.favorite,
-              color: Colors.white,
+              color: WHITE,
             ),
           )),
     );
@@ -120,23 +121,17 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          Text(
-            cost,
-            style: kMainHeaderBlueTextStyle,
-          ),
+          buildSingleText(text: cost, style: kMainHeaderBlueTextStyle),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              Text(
-                rating,
-                style: kmeduimBlackTextStyle,
-              ),
+              buildSingleText(text: rating, style: kmeduimBlackTextStyle),
               SizedBox(width: DIMEN_5),
               Icon(
                 Icons.star,
-                color: Colors.lightBlue,
+                color: LIGHT_BLUE,
                 size: DIMEN_15,
               ),
             ],
@@ -148,7 +143,7 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
 
   Widget buildSingleCard({String upText, String downText}) {
     return Card(
-      color: Colors.white,
+      color: WHITE,
       margin: EdgeInsets.fromLTRB(DIMEN_20, DIMEN_0, DIMEN_20, DIMEN_40),
       elevation: DIMEN_2,
       child: Container(
@@ -159,17 +154,9 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Text(
-              upText,
-              style: ksubHeaderBlueTextStyle,
-            ),
-            SizedBox(
-              height: DIMEN_5,
-            ),
-            Text(
-              downText,
-              style: ksubHeaderBlackTextStyle,
-            ),
+            buildSingleText(text: upText, style: ksubHeaderBlueTextStyle),
+            SizedBox(height: DIMEN_5),
+            buildSingleText(text: downText, style: ksubHeaderBlackTextStyle),
           ],
         ),
       ),
@@ -177,15 +164,17 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
   }
 
   Widget buildCourseDetailsCard() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisSize: MainAxisSize.max,
-      children: <Widget>[
-        buildSingleCard(upText: "24", downText: classe),
-        buildSingleCard(upText: "2Hours", downText: time),
-        buildSingleCard(upText: "19", downText: seat),
-      ],
+    return FittedBox(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: <Widget>[
+          buildSingleCard(upText: "24", downText: classe),
+          buildSingleCard(upText: "2Hours", downText: time),
+          buildSingleCard(upText: "19", downText: seat),
+        ],
+      ),
     );
   }
 
@@ -205,7 +194,7 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
               child: Center(
                 child: Icon(
                   Icons.clear,
-                  color: Colors.grey,
+                  color: GREY,
                   size: DIMEN_22,
                 ),
               ),
@@ -218,11 +207,8 @@ class _CourseCardDetailsState extends State<CourseCardDetails> {
                 height: DIMEN_40,
                 decoration: kBoxDecorationAllSide8,
                 child: Center(
-                  child: Text(
-                    joinCourseText,
-                    style: kButtonTextStyle,
-                  ),
-                ),
+                    child: buildSingleText(
+                        text: joinCourseText, style: kButtonTextStyle)),
               ),
             ),
           ),
