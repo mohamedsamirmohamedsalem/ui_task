@@ -1,3 +1,5 @@
+const double DIMEN__2 = -12.0;
+const double DIMEN__12 = -12.0;
 const double DIMEN_0 = 0.0;
 const double DIMEN_1 = 1.0;
 const double DIMEN_2 = 2.0;
@@ -59,3 +61,6 @@ const double DIMEN_57 = 57.0;
 const double DIMEN_58 = 58.0;
 const double DIMEN_59 = 59.0;
 const double DIMEN_60 = 60.0;
+const double DIMEN_100 = 100.0;
+const double DIMEN_90 = 90.0;
+const double DIMEN_140 = 140.0;

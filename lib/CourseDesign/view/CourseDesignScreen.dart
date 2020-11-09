@@ -7,13 +7,14 @@ import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
 import 'package:ui_task/resources/strings.dart';
+import 'package:ui_task/resources/styles.dart';
 
+// ignore: must_be_immutable
 class CourseDesignScreen extends StatelessWidget {
   int categoryIndex = 0;
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: Constant.lightTheme,
@@ -38,11 +39,7 @@ class CourseDesignScreen extends StatelessWidget {
                         bottom: DIMEN_24),
                     child: Text(
                       popularCourse,
-                      style: TextStyle(
-                          decoration: TextDecoration.none,
-                          color: DARK_BLACK,
-                          fontWeight: FontWeight.w700,
-                          fontSize: DIMEN_21),
+                      style: kBlackTextStyle700,
                     )),
                 SizedBox(height: DIMEN_8),
                 buildPopularCourse(context),
@@ -75,19 +72,11 @@ class CourseDesignScreen extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     chooseYour,
-                    style: TextStyle(
-                        decoration: TextDecoration.none,
-                        color: GRAY_ITEM_TEXT,
-                        fontWeight: FontWeight.w400,
-                        fontSize: DIMEN_18),
+                    style: kBlackTextStyle400,
                   ),
                   buildSingleText(
                     text: designCourse,
-                    style: TextStyle(
-                        decoration: TextDecoration.none,
-                        color: DARK_BLACK,
-                        fontWeight: FontWeight.w700,
-                        fontSize: DIMEN_21),
+                    style: kBlackTextStyle700,
                   ),
                 ],
               ),
@@ -144,11 +133,7 @@ class CourseDesignScreen extends StatelessWidget {
               top: DIMEN_8, left: DIMEN_16, right: DIMEN_16, bottom: DIMEN_24),
           child: Text(
             category,
-            style: TextStyle(
-                decoration: TextDecoration.none,
-                color: DARK_BLACK,
-                fontWeight: FontWeight.w700,
-                fontSize: DIMEN_21),
+            style: kBlackTextStyle700,
           ),
         ),
         Container(
