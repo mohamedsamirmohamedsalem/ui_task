@@ -43,9 +43,9 @@ class CourseCardDetails extends StatelessWidget {
     return Container(
       color: WHITE,
       child: Image(
-        height: 250,
+        height: 300,
         fit: BoxFit.cover,
-        image: AssetImage(INTERFACE4),
+        image: AssetImage(WEB_INTERFACE),
         width: MediaQuery.of(context).size.width,
       ),
     );
@@ -55,7 +55,7 @@ class CourseCardDetails extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         color: TRANSPARENT,
-        padding: EdgeInsets.only(top: 220),
+        padding: EdgeInsets.only(top: 270),
         child: Stack(
           alignment: Alignment.topLeft,
           children: <Widget>[

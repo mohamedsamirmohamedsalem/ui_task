@@ -8,14 +8,6 @@ import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
 import 'package:ui_task/resources/strings.dart';
 
-// class CourseDesignScreen extends StatefulWidget {
-// //   @override
-// //   _CourseDesignScreenState createState() => _CourseDesignScreenState();
-// // }
-// //
-// // class _CourseDesignScreenState extends State<CourseDesignScreen> {
-// //
-
 class CourseDesignScreen extends StatelessWidget {
   int categoryIndex = 0;
 
@@ -63,7 +55,7 @@ class CourseDesignScreen extends StatelessWidget {
 
   onCategoryListClick(int index) {
     categoryIndex = index;
-    //setState(() {});
+    // setState(() {});
   }
 
   Widget homeHeaderView(context) {
@@ -89,8 +81,8 @@ class CourseDesignScreen extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         fontSize: DIMEN_18),
                   ),
-                  Text(
-                    designCourse,
+                  buildSingleText(
+                    text: designCourse,
                     style: TextStyle(
                         decoration: TextDecoration.none,
                         color: DARK_BLACK,
@@ -107,6 +99,13 @@ class CourseDesignScreen extends StatelessWidget {
             ),
           ],
         ));
+  }
+
+  Text buildSingleText({String text, TextStyle style}) {
+    return Text(
+      text,
+      style: style,
+    );
   }
 
   Widget searchBar(context) {

@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/resources/strings.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Runner.build/Release-iphoneos/Runner.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Runner.build/Release-iphoneos/Runner.build/dgph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ui_task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,45 +67,65 @@
       <option name="presentableId" value="Default" />
       <updated>1603783680222</updated>
     </task>
+    <task id="LOCAL-00001" summary="code refactor">
+      <created>1604843383564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604843383564</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="code refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603894337055">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.988@0.23.1920.988" timestamp="1603894337055" />
-    <state width="1868" height="636" key="GridCell.Tab.0.bottom" timestamp="1604838865530">
+    <state x="529" y="50" key="CommitChangelistDialog2" timestamp="1604843383399">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="529" y="50" key="CommitChangelistDialog2/0.23.1920.988@0.23.1920.988" timestamp="1604843383399" />
+    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog" timestamp="1604904683699">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog/0.23.1920.988@0.23.1920.988" timestamp="1604904683699" />
+    <state width="1868" height="228" key="GridCell.Tab.0.bottom" timestamp="1604904941137">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state width="1878" height="482" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.bottom/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
-    <state width="1868" height="636" key="GridCell.Tab.0.bottom/0.23.1920.988@0.23.1920.988" timestamp="1604838865530" />
-    <state width="1868" height="636" key="GridCell.Tab.0.center" timestamp="1604838865529">
+    <state width="1868" height="228" key="GridCell.Tab.0.bottom/0.23.1920.988@0.23.1920.988" timestamp="1604904941137" />
+    <state width="1868" height="228" key="GridCell.Tab.0.center" timestamp="1604904941137">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state width="1878" height="482" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.center/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
-    <state width="1868" height="636" key="GridCell.Tab.0.center/0.23.1920.988@0.23.1920.988" timestamp="1604838865529" />
-    <state width="1868" height="636" key="GridCell.Tab.0.left" timestamp="1604838865529">
+    <state width="1868" height="228" key="GridCell.Tab.0.center/0.23.1920.988@0.23.1920.988" timestamp="1604904941137" />
+    <state width="1868" height="228" key="GridCell.Tab.0.left" timestamp="1604904941136">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state width="1878" height="482" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.980@0.23.1920.980" timestamp="1604238489001" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.left/0.23.1920.984@0.23.1920.984" timestamp="1604237150574" />
-    <state width="1868" height="636" key="GridCell.Tab.0.left/0.23.1920.988@0.23.1920.988" timestamp="1604838865529" />
-    <state width="1868" height="636" key="GridCell.Tab.0.right" timestamp="1604838865530">
+    <state width="1868" height="228" key="GridCell.Tab.0.left/0.23.1920.988@0.23.1920.988" timestamp="1604904941136" />
+    <state width="1868" height="228" key="GridCell.Tab.0.right" timestamp="1604904941137">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
     <state width="1878" height="482" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1604572039806" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.980@0.23.1920.980" timestamp="1604238489002" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1604238200104" />
     <state width="1878" height="498" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1604237150575" />
-    <state width="1868" height="636" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1604838865530" />
+    <state width="1868" height="228" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1604904941137" />
     <state x="670" y="236" key="MultipleFileMergeDialog" timestamp="1604238148702">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
@@ -131,6 +135,10 @@
     </state>
     <state x="461" y="152" key="SettingsEditor/0.23.1920.982@0.23.1920.982" timestamp="1604238172568" />
     <state x="461" y="152" key="SettingsEditor/0.23.1920.984@0.23.1920.984" timestamp="1604236848887" />
+    <state x="460" y="194" key="Vcs.Push.Dialog.v2" timestamp="1604843386418">
+      <screen x="0" y="23" width="1920" height="988" />
+    </state>
+    <state x="460" y="194" key="Vcs.Push.Dialog.v2/0.23.1920.988@0.23.1920.988" timestamp="1604843386418" />
     <state x="100" y="123" width="1720" height="788" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1603890873786">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
