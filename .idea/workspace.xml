@@ -4,11 +4,8 @@
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Widget/category_collection_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/category_collection_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Widget/popular_course_view.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Widget/popular_course_view.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/Dimens.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/Dimens.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/styles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesignDetails/view/CourseCardDetails.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/resources/strings.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/resources/strings.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

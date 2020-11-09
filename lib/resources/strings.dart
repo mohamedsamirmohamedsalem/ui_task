@@ -13,3 +13,4 @@ final String chooseYour = "Choose Your";
 final String designCourse = "Design Course";
 final String search = "Search...";
 final String category = "Category";
+final List<String> name = ["Ui/Ux", "Coding", "Basic UI"];
