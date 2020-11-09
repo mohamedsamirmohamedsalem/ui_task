@@ -1,13 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
-import 'package:ui_task/Widget/category_collection_view.dart';
-import 'package:ui_task/Widget/popular_course_view.dart';
 import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
 import 'package:ui_task/resources/strings.dart';
 import 'package:ui_task/resources/styles.dart';
+
+import 'Widget/category_collection_view.dart';
+import 'Widget/popular_course_view.dart';
 
 // ignore: must_be_immutable
 class CourseDesignScreen extends StatelessWidget {
