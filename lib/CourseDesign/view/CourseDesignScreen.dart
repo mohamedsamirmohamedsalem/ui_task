@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
+import 'package:ui_task/CourseDesign/presenter/presenter.dart';
+import 'package:ui_task/CourseDesign/view/CourseDesign.dart';
 import 'package:ui_task/Widget/category_collection_view.dart';
 import 'package:ui_task/Widget/popular_course_view.dart';
 import 'package:ui_task/resources/Dimens.dart';
@@ -12,8 +14,22 @@ class CourseDesignScreen extends StatefulWidget {
   _CourseDesignScreenState createState() => _CourseDesignScreenState();
 }
 
-class _CourseDesignScreenState extends State<CourseDesignScreen> {
+class _CourseDesignScreenState extends State<CourseDesignScreen>
+    implements CourseDesign {
   int CategoryIndex = 0;
+  CourseDesignPresenter _presentor;
+  List<Category> categoryList;
+  List<Category> categoryListPopular;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _presentor = new CourseDesignPresenter();
+    _presentor.attachView(this);
+    _presentor.fetchData();
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -37,7 +53,7 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
                 SizedBox(
                   height: 8,
                 ),
-                buildDesationCollection(context),
+                buildDesationCollection(context, categoryList),
                 SizedBox(
                   height: 8,
                 ),
@@ -59,7 +75,7 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
                 SizedBox(
                   height: 8,
                 ),
-                buildPopularCourse(context),
+                buildPopularCourse(context, categoryListPopular),
                 SizedBox(
                   height: 8,
                 ),
@@ -72,6 +88,25 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
   onCategoryListClick(int index) {
     CategoryIndex = index;
     setState(() {});
+  }
+
+  @override
+  onFailLoadCourseList() {
+    // TODO: implement onFailLoadCourseList
+    setState(() {
+      categoryListPopular = [];
+      categoryList = [];
+    });
+  }
+
+  @override
+  onLoadCourseList(
+      List<Category> categoryList, List<Category> categoryListPopular) {
+    // TODO: implement onLoadCourseList
+    setState(() {
+      this.categoryList = categoryList;
+      this.categoryListPopular = categoryListPopular;
+    });
   }
 }
 
@@ -205,8 +240,8 @@ Widget CategoryView(context, Function onCategoryListClick, int CategoryIndex) {
   );
 }
 
-buildDesationCollection(BuildContext context) {
-  List<Category> categoryList = Category.categoryList;
+Widget buildDesationCollection(
+    BuildContext context, List<Category> categoryList) {
   return Container(
     height: MediaQuery.of(context).size.height / 4.5,
     width: MediaQuery.of(context).size.width,
@@ -225,10 +260,8 @@ buildDesationCollection(BuildContext context) {
   );
 }
 
-Widget buildPopularCourse(BuildContext context) {
-  List<Category> categoryList = Category.popularCourseList;
+Widget buildPopularCourse(BuildContext context, List<Category> categoryList) {
   return Container(
-    //height: MediaQuery.of(context).size.height / 2,
     child: GridView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
