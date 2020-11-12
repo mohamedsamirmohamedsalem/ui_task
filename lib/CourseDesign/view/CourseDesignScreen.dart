@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
+import 'package:ui_task/Utilty/widget_animator.dart';
 import 'package:ui_task/Widget/category_collection_view.dart';
 import 'package:ui_task/Widget/popular_course_view.dart';
 import 'package:ui_task/resources/Dimens.dart';
@@ -168,36 +169,39 @@ Widget CategoryView(context, Function onCategoryListClick, int CategoryIndex) {
           itemCount: 3,
           itemBuilder: (BuildContext context, int index) {
             List<String> name = ["Ui/Ux", "Coding", "Basic UI"];
-            return GestureDetector(
-                onTap: () {
-                  onCategoryListClick(index);
-                },
-                child: Container(
-                    margin: EdgeInsets.only(right: DIMEN_14, left: DIMEN_14),
-                    width: MediaQuery.of(context).size.width * 0.25,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: LIGHT_BLUE),
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: Material(
-                        color: CategoryIndex != index
-                            ? Colors.white
-                            : LIGHT_BLUE, // button color
-                        child: SizedBox(
-                          child: Center(
-                            child: Text(
-                              name[index],
-                              style: TextStyle(
-                                  color: CategoryIndex != index
-                                      ? LIGHT_BLUE
-                                      : WHITE),
+            return WidgetAnimator(
+                duration: Duration(milliseconds: 1000),
+                child: GestureDetector(
+                    onTap: () {
+                      onCategoryListClick(index);
+                    },
+                    child: Container(
+                        margin:
+                            EdgeInsets.only(right: DIMEN_14, left: DIMEN_14),
+                        width: MediaQuery.of(context).size.width * 0.25,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: LIGHT_BLUE),
+                          borderRadius: BorderRadius.circular(30.0),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: Material(
+                            color: CategoryIndex != index
+                                ? Colors.white
+                                : LIGHT_BLUE, // button color
+                            child: SizedBox(
+                              child: Center(
+                                child: Text(
+                                  name[index],
+                                  style: TextStyle(
+                                      color: CategoryIndex != index
+                                          ? LIGHT_BLUE
+                                          : WHITE),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    )));
+                        ))));
           },
         ),
       )
@@ -238,9 +242,10 @@ Widget buildPopularCourse(BuildContext context) {
         childAspectRatio: 1,
       ),
       itemBuilder: (context, index) {
-        return PopularCourse(
+        return WidgetAnimator(
+            child: PopularCourse(
           cat: categoryList[index],
-        );
+        ));
       },
     ),
   );
