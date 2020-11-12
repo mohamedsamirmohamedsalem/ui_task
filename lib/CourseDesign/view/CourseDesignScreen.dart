@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ui_task/CourseDesign/block/ActionEvent.dart';
+import 'package:ui_task/CourseDesign/block/ChangeSelectedButtonBloc.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
 import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
@@ -14,8 +16,10 @@ import 'Widget/popular_course_view.dart';
 // ignore: must_be_immutable
 class CourseDesignScreen extends StatelessWidget {
   int categoryIndex = 0;
+  int categoryListCount = 3;
   List<Category> categoryList = Category.categoryList;
   List<Category> popularCourseList = Category.popularCourseList;
+  final ChangeSelectedButtonBloc _bloc = ChangeSelectedButtonBloc();
 
   @override
   Widget build(BuildContext context) {
@@ -30,29 +34,23 @@ class CourseDesignScreen extends StatelessWidget {
                   SizedBox(height: DIMEN_8),
                   searchBar(context),
                   SizedBox(height: DIMEN_8),
-                  categoryView(context, onCategoryListClick, categoryIndex),
+                  categoryView(context: context),
                   SizedBox(height: DIMEN_8),
                   buildDestinationCollection(context),
                   SizedBox(height: DIMEN_8),
-                  Container(
-                      padding: EdgeInsets.only(
-                          top: DIMEN_8,
-                          left: DIMEN_16,
-                          right: DIMEN_16,
-                          bottom: DIMEN_24),
-                      child: Text(
-                        popularCourse,
-                        style: kBlackTextStyle700,
-                      )),
+                  buildTextWthPadding(
+                      text: popularCourse, style: kBlackTextStyle700),
                   SizedBox(height: DIMEN_8),
                   buildPopularCourse(context),
                   SizedBox(height: DIMEN_8),
                 ]))));
   }
 
-  onCategoryListClick(int index) {
-    categoryIndex = index;
-    // setState(() {});
+  Widget buildTextWthPadding({String text, TextStyle style}) {
+    return Container(
+        padding: EdgeInsets.only(
+            top: DIMEN_8, left: DIMEN_16, right: DIMEN_16, bottom: DIMEN_24),
+        child: Text(text, style: style));
   }
 
   Widget homeHeaderView(context) {
@@ -117,56 +115,58 @@ class CourseDesignScreen extends StatelessWidget {
     );
   }
 
-  Widget categoryView(
-      context, Function onCategoryListClick, int categoryIndex) {
+  Widget categoryView({BuildContext context}) {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Container(
-            padding: const EdgeInsets.only(
-                top: DIMEN_8,
-                left: DIMEN_16,
-                right: DIMEN_16,
-                bottom: DIMEN_24),
-            child: Text(
-              category,
-              style: kBlackTextStyle700,
-            ),
-          ),
+          buildTextWthPadding(text: category, style: kBlackTextStyle700),
           Container(
               height: DIMEN_40,
               child: ListView.builder(
                   primary: false,
                   scrollDirection: Axis.horizontal,
-                  itemCount: 3,
+                  itemCount: categoryListCount,
                   itemBuilder: (BuildContext context, int index) {
-                    return GestureDetector(
-                        onTap: () => onCategoryListClick(index),
-                        child: Container(
-                            margin: EdgeInsets.only(
-                                right: DIMEN_14, left: DIMEN_14),
-                            width: MediaQuery.of(context).size.width * 0.25,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: LIGHT_BLUE),
-                              borderRadius: BorderRadius.circular(DIMEN_30),
-                            ),
-                            child: ClipRRect(
-                                borderRadius: BorderRadius.circular(DIMEN_30),
-                                child: Material(
-                                    color: categoryIndex != index
-                                        ? WHITE
-                                        : LIGHT_BLUE, // button color
-                                    child: SizedBox(
-                                        child: Center(
-                                            child: Text(
-                                      name[index],
-                                      style: TextStyle(
-                                          color: categoryIndex != index
-                                              ? LIGHT_BLUE
-                                              : WHITE),
-                                    )))))));
+                    return StreamBuilder(
+                        stream: _bloc.selectedIndex,
+                        initialData: 0,
+                        builder: (context, snapshot) {
+                          return GestureDetector(
+                            onTap: () =>
+                                _bloc.selectedIndexEventSink.add(ActionEvent()),
+                            child: buildSingleCard(
+                                context: context,
+                                currentIndex: index,
+                                selectedIndex: snapshot.data),
+                            // child: buildSingleCard(),
+                          );
+                        });
                   }))
         ]);
+  }
+
+  buildSingleCard({BuildContext context, int selectedIndex, int currentIndex}) {
+    return Container(
+        margin: EdgeInsets.only(right: DIMEN_14, left: DIMEN_14),
+        width: MediaQuery.of(context).size.width * 0.25,
+        decoration: BoxDecoration(
+          border: Border.all(color: LIGHT_BLUE),
+          borderRadius: BorderRadius.circular(DIMEN_30),
+        ),
+        child: ClipRRect(
+            borderRadius: BorderRadius.circular(DIMEN_30),
+            child: Material(
+                color: selectedIndex != currentIndex
+                    ? WHITE
+                    : LIGHT_BLUE, // button color
+                child: SizedBox(
+                    child: Center(
+                        child: Text(
+                  name[currentIndex],
+                  style: TextStyle(
+                      color:
+                          selectedIndex != currentIndex ? LIGHT_BLUE : WHITE),
+                ))))));
   }
 
   buildDestinationCollection(BuildContext context) {

@@ -12,17 +12,13 @@ class CourseCardDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height,
-      color: WHITE,
-      child: Stack(
-        alignment: Alignment.topLeft,
-        children: [
+        height: MediaQuery.of(context).size.height,
+        color: WHITE,
+        child: Stack(alignment: Alignment.topLeft, children: [
           buildTopImage(context: context),
           buildBottomSection(),
           buildBackButton(context: context),
-        ]
-      )
-    );
+        ]));
   }
 
   Widget buildBackButton({BuildContext context}) {
@@ -41,36 +37,30 @@ class CourseCardDetails extends StatelessWidget {
 
   Container buildTopImage({BuildContext context}) {
     return Container(
-      color: WHITE,
-      child: Image(
-        height: 300,
-        fit: BoxFit.cover,
-        image: AssetImage(WEB_INTERFACE),
-        width: MediaQuery.of(context).size.width,
-      )
-    );
+        color: WHITE,
+        child: Image(
+          height: 300,
+          fit: BoxFit.cover,
+          image: AssetImage(WEB_INTERFACE),
+          width: MediaQuery.of(context).size.width,
+        ));
   }
 
   Widget buildBottomSection() {
     return SingleChildScrollView(
-      child: Container(
-        color: TRANSPARENT,
-        padding: EdgeInsets.only(top: 270),
-        child: Stack(
-          alignment: Alignment.topLeft,
-          children: <Widget>[
-            Container(
-              margin: EdgeInsets.only(top: DIMEN_26),
-              padding:
-                  EdgeInsets.fromLTRB(DIMEN_20, DIMEN_20, DIMEN_20, DIMEN_0),
-              decoration: kBoxDecorationSide20,
-              child: buildListOfDetails(),
-            ),
-            buildFavoriteCircleAvatar(),
-          ]
-        )
-      )
-    );
+        child: Container(
+            color: TRANSPARENT,
+            padding: EdgeInsets.only(top: 270),
+            child: Stack(alignment: Alignment.topLeft, children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: DIMEN_26),
+                padding:
+                    EdgeInsets.fromLTRB(DIMEN_20, DIMEN_20, DIMEN_20, DIMEN_0),
+                decoration: kBoxDecorationSide20,
+                child: buildListOfDetails(),
+              ),
+              buildFavoriteCircleAvatar(),
+            ])));
   }
 
   Widget buildListOfDetails() {
@@ -179,11 +169,8 @@ class CourseCardDetails extends StatelessWidget {
                       width: DIMEN_50,
                       decoration: kBoxDecorationGreyBorder,
                       child: Center(
-                          child: Icon(
-                        Icons.clear,
-                        color: GREY,
-                        size: DIMEN_22,
-                      )))),
+                          child:
+                              Icon(Icons.clear, color: GREY, size: DIMEN_22)))),
               SizedBox(width: DIMEN_15),
               Expanded(
                   child: GestureDetector(
