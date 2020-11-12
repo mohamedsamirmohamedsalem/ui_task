@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Utilty/widget_animator.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ui_task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +84,10 @@
     </state>
     <state x="348" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.978@0.23.1920.978" timestamp="1604409956623" />
     <state x="348" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1920.988@0.23.1920.988" timestamp="1603894337055" />
-    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog" timestamp="1604562863208">
+    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog" timestamp="1605185658728">
       <screen x="0" y="23" width="1920" height="988" />
     </state>
-    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog/0.23.1920.988@0.23.1920.988" timestamp="1604562863208" />
+    <state x="100" y="123" width="1720" height="788" key="DiffContextDialog/0.23.1920.988@0.23.1920.988" timestamp="1605185658728" />
     <state width="1878" height="482" key="GridCell.Tab.0.bottom" timestamp="1604572624345">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
