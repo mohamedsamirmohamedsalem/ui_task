@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/block/ActionEvent.dart';
 import 'package:ui_task/CourseDesign/block/ChangeSelectedButtonBloc.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
-import 'package:ui_task/Utilty/widget_animator.dart';
 import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
@@ -128,23 +127,20 @@ class CourseDesignScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryListCount,
                   itemBuilder: (BuildContext context, int index) {
-                    return WidgetAnimator(
-                      duration: Duration(milliseconds: 1000),
-                      child: StreamBuilder(
-                          stream: _bloc.selectedIndex,
-                          initialData: 0,
-                          builder: (context, snapshot) {
-                            return GestureDetector(
-                              onTap: () => _bloc.selectedIndexEventSink
-                                  .add(ActionEvent()),
-                              child: buildSingleCard(
-                                  context: context,
-                                  currentIndex: index,
-                                  selectedIndex: snapshot.data),
-                              // child: buildSingleCard(),
-                            );
-                          }),
-                    );
+                    return StreamBuilder(
+                        stream: _bloc.selectedIndex,
+                        initialData: 0,
+                        builder: (context, snapshot) {
+                          return GestureDetector(
+                            onTap: () =>
+                                _bloc.selectedIndexEventSink.add(ActionEvent()),
+                            child: buildSingleCard(
+                                context: context,
+                                currentIndex: index,
+                                selectedIndex: snapshot.data),
+                            // child: buildSingleCard(),
+                          );
+                        });
                   }))
         ]);
   }
