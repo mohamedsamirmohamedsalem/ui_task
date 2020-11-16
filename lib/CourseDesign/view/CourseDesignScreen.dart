@@ -46,19 +46,19 @@ class _CourseDesignScreenState extends State<CourseDesignScreen>
               children: <Widget>[
                 HomeHeaderView(context),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 SearcharBar(context),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 CategoryView(context, onCategoryListClick, CategoryIndex),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 buildDesationCollection(context, categoryList),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 Container(
                   padding: const EdgeInsets.only(
@@ -76,11 +76,11 @@ class _CourseDesignScreenState extends State<CourseDesignScreen>
                   ),
                 ),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 buildPopularCourse(context, categoryListPopular),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
               ],
             )),
