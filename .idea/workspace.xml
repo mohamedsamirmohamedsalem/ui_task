@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28b965ba-9376-441d-a116-91ea0dc23904" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__io_flutter_arm64_v8a_debug_1_0_0_d1bc06f032f9d6c148ea6b96b48261d6f545004f_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__io_flutter_armeabi_v7a_debug_1_0_0_d1bc06f032f9d6c148ea6b96b48261d6f545004f_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__io_flutter_flutter_embedding_debug_1_0_0_d1bc06f032f9d6c148ea6b96b48261d6f545004f_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__io_flutter_x86_64_debug_1_0_0_d1bc06f032f9d6c148ea6b96b48261d6f545004f_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/libraries/Gradle__io_flutter_x86_debug_1_0_0_d1bc06f032f9d6c148ea6b96b48261d6f545004f_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/modules/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/ui_task_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/ui_task_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CourseDesign/view/CourseDesignScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui_task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ui_task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +42,6 @@
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/CourseDesign/model" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
-    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -135,9 +123,10 @@
     <state width="1878" height="15" key="GridCell.Tab.0.right/0.23.1920.984@0.23.1920.984" timestamp="1604240220513" />
     <state width="1868" height="365" key="GridCell.Tab.0.right/0.23.1920.988@0.23.1920.988" timestamp="1604562591726" />
     <state width="1878" height="314" key="GridCell.Tab.0.right/0.23.1920.994@0.23.1920.994" timestamp="1605192051317" />
-    <state x="461" y="114" key="SettingsEditor" timestamp="1604559266641">
-      <screen x="0" y="23" width="1920" height="988" />
+    <state x="461" y="113" key="SettingsEditor" timestamp="1605622743862">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="461" y="113" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1605622743862" />
     <state x="461" y="152" key="SettingsEditor/0.23.1920.984@0.23.1920.984" timestamp="1604236848887" />
     <state x="461" y="114" key="SettingsEditor/0.23.1920.988@0.23.1920.988" timestamp="1604559266641" />
     <state x="794" y="198" key="VcsDiffUtil.ChangesDialog" timestamp="1604562711404">
