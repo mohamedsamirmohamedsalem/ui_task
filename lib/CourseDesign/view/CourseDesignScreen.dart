@@ -1,9 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
+<<<<<<< HEAD
 import 'package:ui_task/Utilty/widget_animator.dart';
 import 'package:ui_task/Widget/category_collection_view.dart';
 import 'package:ui_task/Widget/popular_course_view.dart';
+=======
+import 'package:ui_task/CourseDesign/presenter/presenter.dart';
+import 'package:ui_task/CourseDesign/view/CourseDesign.dart';
+import 'package:ui_task/Widget/CategoryView.dart';
+import 'package:ui_task/Widget/HomeHeaderView.dart';
+import 'package:ui_task/Widget/SearcharBar.dart';
+import 'package:ui_task/Widget/buildDesationCollection.dart';
+import 'package:ui_task/Widget/buildPopularCourse.dart';
+>>>>>>> develop
 import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
@@ -13,8 +23,22 @@ class CourseDesignScreen extends StatefulWidget {
   _CourseDesignScreenState createState() => _CourseDesignScreenState();
 }
 
-class _CourseDesignScreenState extends State<CourseDesignScreen> {
+class _CourseDesignScreenState extends State<CourseDesignScreen>
+    implements CourseDesign {
   int CategoryIndex = 0;
+  CourseDesignPresenter _presentor;
+  List<Category> categoryList;
+  List<Category> categoryListPopular;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _presentor = new CourseDesignPresenter();
+    _presentor.attachView(this);
+    _presentor.fetchData();
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -28,19 +52,19 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
               children: <Widget>[
                 HomeHeaderView(context),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 SearcharBar(context),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 CategoryView(context, onCategoryListClick, CategoryIndex),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
-                buildDesationCollection(context),
+                buildDesationCollection(context, categoryList),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
                 Container(
                   padding: const EdgeInsets.only(
@@ -58,11 +82,11 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
-                buildPopularCourse(context),
+                buildPopularCourse(context, categoryListPopular),
                 SizedBox(
-                  height: 8,
+                  height: DIMEN_8,
                 ),
               ],
             )),
@@ -74,51 +98,8 @@ class _CourseDesignScreenState extends State<CourseDesignScreen> {
     CategoryIndex = index;
     setState(() {});
   }
-}
 
-Widget HomeHeaderView(context) {
-  return Container(
-      padding: const EdgeInsets.only(
-          top: DIMEN_32, left: DIMEN_16, right: DIMEN_16, bottom: DIMEN_16),
-      width: MediaQuery.of(context).size.width,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[
-          Container(
-            width: MediaQuery.of(context).size.width * 0.6,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  "Choose Your",
-                  style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: GRAY_ITEM_TEXT,
-                      fontWeight: FontWeight.w400,
-                      fontSize: DIMEN_18),
-                ),
-                Text(
-                  "Design Course",
-                  style: TextStyle(
-                      decoration: TextDecoration.none,
-                      color: DARK_BLACK,
-                      fontWeight: FontWeight.w700,
-                      fontSize: DIMEN_21),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            width: 35.0,
-            height: 35.0,
-            child: Image.asset("assets/userImage.png"),
-          ),
-        ],
-      ));
-}
-
+<<<<<<< HEAD
 Widget SearcharBar(context) {
   return Container(
     height: 45,
@@ -249,4 +230,24 @@ Widget buildPopularCourse(BuildContext context) {
       },
     ),
   );
+=======
+  @override
+  onFailLoadCourseList() {
+    // TODO: implement onFailLoadCourseList
+    setState(() {
+      categoryListPopular = [];
+      categoryList = [];
+    });
+  }
+
+  @override
+  onLoadCourseList(
+      List<Category> categoryList, List<Category> categoryListPopular) {
+    // TODO: implement onLoadCourseList
+    setState(() {
+      this.categoryList = categoryList;
+      this.categoryListPopular = categoryListPopular;
+    });
+  }
+>>>>>>> develop
 }
