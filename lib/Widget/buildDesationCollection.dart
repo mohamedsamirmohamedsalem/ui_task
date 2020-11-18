@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
+import 'package:ui_task/CourseDesign/view/Widget/category_collection_view.dart';
 import 'package:ui_task/Widget/category_collection_view.dart';
 
 Widget buildDesationCollection(
