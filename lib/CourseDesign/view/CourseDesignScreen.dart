@@ -1,8 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_task/CourseDesign/block/ActionEvent.dart';
 import 'package:ui_task/CourseDesign/block/ChangeSelectedButtonBloc.dart';
 import 'package:ui_task/CourseDesign/model/category.dart';
+import 'package:ui_task/Utilty/widget_animator.dart';
 import 'package:ui_task/resources/Dimens.dart';
 import 'package:ui_task/resources/colors.dart';
 import 'package:ui_task/resources/constants.dart';
@@ -21,6 +24,10 @@ class CourseDesignScreen extends StatelessWidget {
   List<Category> popularCourseList = Category.popularCourseList;
   final ChangeSelectedButtonBloc _bloc = ChangeSelectedButtonBloc();
 
+  final StreamController<int> _streamController =
+      StreamController<int>.broadcast();
+  Stream<int> get _stream => _streamController.stream;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,21 +36,23 @@ class CourseDesignScreen extends StatelessWidget {
         home: Scaffold(
             body: Container(
                 color: WHITE,
-                child: ListView(children: <Widget>[
-                  homeHeaderView(context),
-                  SizedBox(height: DIMEN_8),
-                  searchBar(context),
-                  SizedBox(height: DIMEN_8),
-                  categoryView(context: context),
-                  SizedBox(height: DIMEN_8),
-                  buildDestinationCollection(context),
-                  SizedBox(height: DIMEN_8),
-                  buildTextWthPadding(
-                      text: popularCourse, style: kBlackTextStyle700),
-                  SizedBox(height: DIMEN_8),
-                  buildPopularCourse(context),
-                  SizedBox(height: DIMEN_8),
-                ]))));
+                child: WidgetAnimator(
+                    duration: Duration(microseconds: 1000),
+                    child: ListView(children: <Widget>[
+                      homeHeaderView(context),
+                      SizedBox(height: DIMEN_8),
+                      searchBar(context),
+                      SizedBox(height: DIMEN_8),
+                      categoryView(context: context),
+                      SizedBox(height: DIMEN_8),
+                      buildDestinationCollection(context),
+                      SizedBox(height: DIMEN_8),
+                      buildTextWthPadding(
+                          text: popularCourse, style: kBlackTextStyle700),
+                      SizedBox(height: DIMEN_8),
+                      buildPopularCourse(context),
+                      SizedBox(height: DIMEN_8),
+                    ])))));
   }
 
   Widget buildTextWthPadding({String text, TextStyle style}) {
@@ -127,13 +136,15 @@ class CourseDesignScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   itemCount: categoryListCount,
                   itemBuilder: (BuildContext context, int index) {
-                    return StreamBuilder(
-                        stream: _bloc.selectedIndex,
+                    return StreamBuilder<int>(
+                        stream: _stream,
                         initialData: 0,
                         builder: (context, snapshot) {
                           return GestureDetector(
-                            onTap: () =>
-                                _bloc.selectedIndexEventSink.add(ActionEvent()),
+                            onTap: () {
+                              _streamController.add(index);
+                              _bloc.selectedIndexEventSink.add(ActionEvent());
+                            },
                             child: buildSingleCard(
                                 context: context,
                                 currentIndex: index,
@@ -173,7 +184,8 @@ class CourseDesignScreen extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height / 4.5,
       width: MediaQuery.of(context).size.width,
-      child: ListView.builder(
+      child: WidgetAnimator(
+          child: ListView.builder(
         primary: false,
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
@@ -184,13 +196,14 @@ class CourseDesignScreen extends StatelessWidget {
             cat: cat,
           );
         },
-      ),
+      )),
     );
   }
 
   Widget buildPopularCourse(BuildContext context) {
     return Container(
-      child: GridView.builder(
+      child: WidgetAnimator(
+          child: GridView.builder(
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemCount: popularCourseList.length,
@@ -203,7 +216,7 @@ class CourseDesignScreen extends StatelessWidget {
             cat: popularCourseList[index],
           );
         },
-      ),
+      )),
     );
   }
 }

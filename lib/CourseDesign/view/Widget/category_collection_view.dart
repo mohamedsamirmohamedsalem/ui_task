@@ -28,76 +28,79 @@ class CategoryItem extends StatelessWidget {
                             borderRadius: BorderRadius.circular(DIMEN_10)),
                         elevation: DIMEN_0,
                         color: GRAY_DIVIDER,
-                        child: Column(children: [
-                          SizedBox(height: DIMEN_16),
-                          Container(
-                              margin: EdgeInsets.only(left: DIMEN_60),
-                              //padding: EdgeInsets.only(left: 15.0),
-                              child: Container(
-                                  width: MediaQuery.of(context).size.width,
-                                  child: Text(
-                                    cat.title,
-                                    style: kBlackTextStyle800,
-                                    textAlign: TextAlign.left,
-                                  ))),
-                          SizedBox(height: DIMEN_8),
-                          Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Container(
-                                    margin: EdgeInsets.only(left: DIMEN_60),
-                                    child: Container(
-                                        child: Text("${cat.lessonCount} lesson",
-                                            style: kBlackTextStyle54.copyWith(
-                                                fontSize: DIMEN_2)))),
-                                Container(
-                                    margin: EdgeInsets.only(right: DIMEN_16),
-                                    child: Row(children: <Widget>[
-                                      Text(
-                                        "${cat.rating}",
-                                        style: kBlackTextStyle54,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        size: DIMEN_12,
-                                        color: LIGHT_BLUE,
-                                      )
-                                    ]))
-                              ]),
-                          SizedBox(height: DIMEN_16),
-                          Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Container(
-                                    margin: EdgeInsets.only(left: DIMEN_60),
-                                    child: Container(
-                                        child: Text(
-                                      "${cat.money}\$",
-                                      style: kBlueTextStyle700,
+                        child: Container(
+                          margin: EdgeInsets.only(left: DIMEN_60),
+                          child: Column(children: [
+                            SizedBox(height: DIMEN_16),
+                            Container(
+                                //padding: EdgeInsets.only(left: 15.0),
+                                child: Container(
+                                    width: MediaQuery.of(context).size.width,
+                                    child: Text(
+                                      cat.title,
+                                      style: kBlackTextStyle800,
+                                      textAlign: TextAlign.left,
                                     ))),
-                                Container(
-                                    width: 20,
-                                    height: 20,
-                                    alignment: Alignment.bottomLeft,
-                                    decoration: BoxDecoration(
-                                      color: LIGHT_BLUE,
-                                      borderRadius:
-                                          BorderRadius.circular(DIMEN_5),
-                                    ),
-                                    margin: EdgeInsets.only(
-                                        right: DIMEN_16, top: DIMEN_2),
-                                    child: Center(
-                                        child: Icon(
-                                      Icons.add,
-                                      size: DIMEN_12,
-                                      color: Colors.white,
-                                    )))
-                              ]),
-                          SizedBox(height: DIMEN_7),
-                        ]))),
+                            SizedBox(height: DIMEN_8),
+                            Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Container(
+                                      // margin: EdgeInsets.only(left: DIMEN_60),
+                                      child: Container(
+                                          child: Text(
+                                              "${cat.lessonCount} lesson",
+                                              style: kBlackTextStyle54))),
+                                  Container(
+                                      margin: EdgeInsets.only(right: DIMEN_16),
+                                      child: Row(children: <Widget>[
+                                        Text(
+                                          "${cat.rating}",
+                                          style: kBlackTextStyle54,
+                                        ),
+                                        Icon(
+                                          Icons.star,
+                                          size: DIMEN_12,
+                                          color: LIGHT_BLUE,
+                                        )
+                                      ]))
+                                ]),
+                            SizedBox(height: DIMEN_16),
+                            Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                      child: Container(
+                                          child: Text(
+                                    "${cat.money}\$",
+                                    style: kBlueTextStyle700,
+                                  ))),
+                                  Container(
+                                      width: 20,
+                                      height: 20,
+                                      alignment: Alignment.bottomLeft,
+                                      decoration: BoxDecoration(
+                                        color: LIGHT_BLUE,
+                                        borderRadius:
+                                            BorderRadius.circular(DIMEN_5),
+                                      ),
+                                      margin: EdgeInsets.only(
+                                          right: DIMEN_16, top: DIMEN_2),
+                                      child: Center(
+                                          child: Icon(
+                                        Icons.add,
+                                        size: DIMEN_12,
+                                        color: Colors.white,
+                                      )))
+                                ]),
+                            SizedBox(height: DIMEN_7),
+                          ]),
+                        ))),
                 Positioned(
-                    left: DIMEN__2,
+                    // left: DIMEN__2,
                     top: DIMEN_24,
                     child: Stack(children: [
                       //Image

@@ -52,7 +52,7 @@ class PopularCourse extends StatelessWidget {
                                       child: Row(children: <Widget>[
                                         Text(
                                           "${cat.rating}",
-                                          style: kBlackTextStyle700,
+                                          style: kBlackTextStyle54,
                                         ),
                                         Icon(
                                           Icons.star,
