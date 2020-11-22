@@ -22,10 +22,10 @@ BoxDecoration kBoxDecorationSide20 = BoxDecoration(
 
 BoxDecoration kBoxDecorationAllSide8 = BoxDecoration(
   color: Colors.lightBlue,
-  borderRadius: BorderRadius.all(Radius.circular(DIMEN_8)),
+  borderRadius: BorderRadius.all(Radius.circular(DIMEN_17)),
 );
 
 BoxDecoration kBoxDecorationGreyBorder = BoxDecoration(
-  border: Border.all(color: Colors.grey),
-  borderRadius: BorderRadius.all(Radius.circular(DIMEN_7)),
+  border: Border.all(color: Colors.black12),
+  borderRadius: BorderRadius.all(Radius.circular(DIMEN_15)),
 );

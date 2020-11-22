@@ -12,7 +12,7 @@ class PopularCourse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: () => navigateToCourseDetailsScreen(context: context),
+        onTap: () => navigateToCourseDetailsScreen(context: context, cat: cat),
         child: Padding(
             padding: EdgeInsets.only(
                 top: DIMEN_0, bottom: DIMEN_16, right: DIMEN_8, left: DIMEN_8),
@@ -84,8 +84,8 @@ class PopularCourse extends StatelessWidget {
             ])));
   }
 
-  void navigateToCourseDetailsScreen({BuildContext context}) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => CourseCardDetails()));
+  void navigateToCourseDetailsScreen({BuildContext context, Category cat}) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => CourseCardDetails(cat: cat)));
   }
 }

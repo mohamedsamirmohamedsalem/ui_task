@@ -15,7 +15,8 @@ class CategoryItem extends StatelessWidget {
         padding: EdgeInsets.only(
             top: DIMEN_5, bottom: DIMEN_5, right: DIMEN_8, left: DIMEN_8),
         child: GestureDetector(
-          onTap: () => navigateToCourseDetailsScreen(context: context),
+          onTap: () =>
+              navigateToCourseDetailsScreen(context: context, cat: cat),
           child: Container(
               width: MediaQuery.of(context).size.width / 1.6,
               child: Stack(children: [
@@ -128,8 +129,8 @@ class CategoryItem extends StatelessWidget {
         ));
   }
 
-  void navigateToCourseDetailsScreen({BuildContext context}) {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => CourseCardDetails()));
+  void navigateToCourseDetailsScreen({BuildContext context, Category cat}) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => CourseCardDetails(cat: cat)));
   }
 }

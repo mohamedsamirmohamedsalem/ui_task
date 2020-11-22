@@ -22,7 +22,15 @@ TextStyle kMainHeaderBlueTextStyle = TextStyle(
 
 TextStyle ksubHeaderBlackTextStyle = TextStyle(
   color: Colors.black,
-  fontSize: DIMEN_12,
+  fontSize: DIMEN_18,
+  fontWeight: FontWeight.w300,
+  fontFamily: "Roboto",
+  decoration: TextDecoration.none,
+);
+
+TextStyle ksubDesBlackTextStyle = TextStyle(
+  color: Colors.black,
+  fontSize: DIMEN_17,
   fontWeight: FontWeight.w300,
   fontFamily: "Roboto",
   decoration: TextDecoration.none,
@@ -38,7 +46,7 @@ TextStyle kmeduimBlackTextStyle = TextStyle(
 
 TextStyle ksubHeaderBlueTextStyle = TextStyle(
   color: Colors.lightBlue,
-  fontSize: DIMEN_11,
+  fontSize: DIMEN_17,
   fontWeight: FontWeight.w600,
   fontFamily: "Roboto",
   decoration: TextDecoration.none,
